@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/68a0af9a-5314-49f7-bdb8-63f2e9a4c56e
 
 > **Optimizing Firefighting Drone Operations using Reinforcement Learning**
 
-이 프로젝트는 **강화학습(PPO)**을 활용하여 제한된 자원(배터리, 소화탄)을 가진 드론이 산불 확산을 막고 화재를 진압하는 최적의 경로를 학습하는 시뮬레이션입니다. `Gymnasium`과 `MiniGrid`를 기반으로 커스텀 환경을 구축하였으며, `Stable-Baselines3` 라이브러리를 사용했습니다.
+이 프로젝트는 강화학습(PPO)을 활용하여 제한된 자원(배터리, 소화탄)을 가진 드론이 산불 확산을 막고 화재를 진압하는 최적의 경로를 학습하는 시뮬레이션입니다. `Gymnasium`과 `MiniGrid`를 기반으로 커스텀 환경을 구축하였으며, `Stable-Baselines3` 라이브러리를 사용했습니다.
 
 ## 📌 Project Overview
 
@@ -34,8 +34,8 @@ https://github.com/user-attachments/assets/68a0af9a-5314-49f7-bdb8-63f2e9a4c56e
 | **Stone** (Purple) | 불이 붙지 않는 장애물 |
 
 ### ⚙️ Dynamics
-1. **Fire Spread:** 매 스텝 **1%**의 확률로 인접한 건강한 나무로 불이 옮겨붙습니다.
-2. **Burn Out:** 매 스텝 **0.1%**의 확률로 나무가 전소되어 사라집니다.
+1. **Fire Spread:** 매 스텝 1%의 확률로 인접한 건강한 나무로 불이 옮겨붙습니다.
+2. **Burn Out:** 매 스텝 0.1%의 확률로 나무가 전소되어 사라집니다.
 3. **Restock Rule:** 드론은 물탱크 방문 시 배터리와 소화탄을 100% 충전합니다.
 
 ---
@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/68a0af9a-5314-49f7-bdb8-63f2e9a4c56e
 ## 🧠 MDP Formulation
 
 ### 1. State Space (Observation)
-에이전트는 **10차원의 연속 벡터(Continuous Vector)**를 관측합니다. CNN의 연산 비용을 줄이기 위해 Feature Engineering을 적용했습니다.
+에이전트는 10차원의 연속 벡터(Continuous Vector)를 관측합니다. CNN의 연산 비용을 줄이기 위해 Feature Engineering을 적용했습니다.
 
 - `[0-1]` **Agent Pos:** 정규화된 좌표 $(x, y)$
 - `[2]` **Water Level:** 소화탄 잔량 비율 (Current / Max)
