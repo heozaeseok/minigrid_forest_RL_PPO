@@ -2,6 +2,8 @@
 
 # 🚁 Forest Fire Fighting Drone with RL (PPO)
 
+https://github.com/user-attachments/assets/68a0af9a-5314-49f7-bdb8-63f2e9a4c56e
+
 > **Optimizing Firefighting Drone Operations using Reinforcement Learning**
 
 이 프로젝트는 **강화학습(PPO)**을 활용하여 제한된 자원(배터리, 소화탄)을 가진 드론이 산불 확산을 막고 화재를 진압하는 최적의 경로를 학습하는 시뮬레이션입니다. `Gymnasium`과 `MiniGrid`를 기반으로 커스텀 환경을 구축하였으며, `Stable-Baselines3` 라이브러리를 사용했습니다.
