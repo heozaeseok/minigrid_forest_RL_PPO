@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/68a0af9a-5314-49f7-bdb8-63f2e9a4c56e
 ## 🧠 MDP Formulation
 
 ### 1. State Space (Observation)
-에이전트는 10차원의 연속 벡터(Continuous Vector)를 관측합니다. CNN의 연산 비용을 줄이기 위해 Feature Engineering을 적용했습니다.
+에이전트는 10차원의 연속 벡터(Continuous Vector)를 관측합니다.
 
 - `[0-1]` **Agent Pos:** 정규화된 좌표 $(x, y)$
 - `[2]` **Water Level:** 소화탄 잔량 비율 (Current / Max)
