@@ -259,6 +259,7 @@ class ForestFireEnv(MiniGridEnv):
         return obs
 
     def step(self, action):
+        self.step_count += 1        
         self.steps_since_tank += 1
         reward = self.p_step 
         terminated = False
@@ -330,4 +331,5 @@ class ForestFireEnv(MiniGridEnv):
         return obs, reward, terminated, truncated, {}
 
 # 환경 ID 등록
+
 gym.register(id="ForestFireMLP-v22", entry_point=ForestFireEnv)
